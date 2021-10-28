@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Didi and Dora Ticker</title>
+
+  <style>
+    *{box-sizing: border-box; padding: 0; margin: 0;}
+ul, ol, li{
+  list-style: none;
+}
+body{ width: 100vw; height: 100vh; background-color:#EAE0D5; display: flex; align-items: center; justify-content: center; }
+.image-ticker{ width: 100vw; overflow: hidden;  background-image: url("triplesun1920.gif"); background-size: cover; background-position: center;}
+.image-ticker:hover ul{animation-play-state: paused;}
+.image-ticker ul{ display: flex; animation: scroll-infinite 5s linear infinite;  }
+.image-ticker ul li{ padding: 10px; width: 800px; height: 500px; display: flex; align-items: center; justify-content: center; font-size: 5rem; flex-shrink: 0;}
+@keyframes scroll-infinite{
+  0%   { transform: translateX(0); }
+  100%  { transform: translateX(-1800px); }
+}
+  </style>
+
+</head>
+<body>
+
+  
+<div class="image-ticker">
+  <ul>
+    <li> <img src="MoreOrange.png" width="800px"> </li>
+    <li> <img src="MoreOrange.png" width="800px"> </li>
+    <li> <img src="MoreOrange.png" width="800px"> </li>
+    <li> <img src="MoreOrange.png" width="800px"> </li>
+    <li> <img src="MoreOrange.png" width="800px"> </li>
+    <li> <img src="MoreOrange.png" width="800px"> </li>
+    <li> <img src="MoreOrange.png" width="800px"> </li>
+    <li> <img src="MoreOrange.png" width="800px"> </li>
+    <li> <img src="MoreOrange.png" width="800px"> </li>
+  </ul>
+
+</div>
+
+  <script  src="./script.js"></script>
+
+</body>
+</html>
